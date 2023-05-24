@@ -12,3 +12,9 @@ button{
     font-size: 20px;
     padding: 30px 50px;
 }
+.display{
+    background-color: aliceblue;
+    border-radius: 20px;
+    text-align: end;
+    font-size: 20px;
+}
