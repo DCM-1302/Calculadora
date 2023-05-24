@@ -3,8 +3,7 @@
     <div class="col-12 text-center text-light">
       <h1>Calculadora</h1>
     </div>
-    <div class="col-12 text-center text-light">
-      <textarea id="display" name="display" cols="120" disabled style="background-color: aliceblue;">Heeello nurse</textarea>
+    <div class="col-10 text-center text-light"  id="display" name="display">
     </div>
     <div class="row">
       <div class="col-3 text-center">
@@ -23,13 +22,13 @@
 
     <div class="row">
       <div class="col-3 text-center">
-        <button id="one" name="one">1</button>
+        <button id="one" name="one" (click)="numerar(1)">1</button>
       </div>
       <div class="col-3 text-center">
-        <button id="two" name="two">2</button>
+        <button id="two" name="two" (click)="numerar(2)">2</button>
       </div>
       <div class="col-3 text-center">
-        <button id="three" name="three">3</button>
+        <button id="three" name="three" (click)="numerar(3)">3</button>
       </div>
       <div class="col-3 text-center">
         <button id="mult" name="mult">X</button>
@@ -38,13 +37,13 @@
     
     <div class="row">
       <div class="col-3 text-center">
-        <button id="four" name="four">4</button>
+        <button id="four" name="four" (click)="numerar(4)">4</button>
       </div>
       <div class="col-3 text-center">
-        <button id="five" name="five">5</button>
+        <button id="five" name="five" (click)="numerar(5)">5</button>
       </div>
       <div class="col-3 text-center">
-        <button id="six" name="six">6</button>
+        <button id="six" name="six" (click)="numerar(6)">6</button>
       </div>
       <div class="col-3 text-center">
         <button id="add" name="add">+</button>
@@ -53,13 +52,13 @@
     
     <div class="row">
       <div class="col-3 text-center">
-        <button id="seven" name="seven">7</button>
+        <button id="seven" name="seven" (click)="numerar(7)">7</button>
       </div>
       <div class="col-3 text-center">
-        <button id="eight" name="eight">8</button>
+        <button id="eight" name="eight" (click)="numerar(8)">8</button>
       </div>
       <div class="col-3 text-center">
-        <button id="nine" name="nine">9</button>
+        <button id="nine" name="nine" (click)="numerar(9)">9</button>
       </div>
       <div class="col-3 text-center">
         <button id="minus" name="minus">-</button>
@@ -71,13 +70,13 @@
         <button id="inverse" name="inverse">+/-</button>
       </div>
       <div class="col-3 text-center">
-        <button id="zero" name="zero">0</button>
+        <button id="zero" name="zero" (click)="numerar(0)">0</button>
       </div>
       <div class="col-3 text-center">
         <button id="decimal" name="decimal">.</button>
       </div>
-      <div class="col-3 text-center">
-        <button id="equals" name="equals">=</button>
+      <div class="col-3 text-center" >
+        <button id="equals" name="equals" style="background-color: cornflowerblue;">=</button>
       </div> 
     </div> <br>
     
