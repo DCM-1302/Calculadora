@@ -14,7 +14,7 @@ export class AppComponent {
     if (this.operacion === "0"){
       this.operacion= Num.toString();
     } else {
-      this.operacion= this.operacion+Num.toString();
+      this.operacion= this.operacion + Num;
     }
     document.getElementById("display")!.innerHTML=this.operacion
   }
