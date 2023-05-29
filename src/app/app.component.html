@@ -19,10 +19,10 @@
         <button id="rewind" name="rewind" (click)="borrar(2)">Borrar</button>
       </div>
       <div class="col-3 text-center">
-        <button id="paren" name="paren">^</button>
+        <button id="paren" name="paren" (click)="operar('e')">^</button>
       </div>
       <div class="col-3 text-center">
-        <button id="divide" name="divide">/</button>
+        <button id="divide" name="divide" (click)="operar('d')">/</button>
       </div>
     </div> <br>
 
@@ -37,7 +37,7 @@
         <button id="three" name="three" (click)="numerar(3)">3</button>
       </div>
       <div class="col-3 text-center">
-        <button id="mult" name="mult">X</button>
+        <button id="mult" name="mult" (click)="operar('m')">X</button>
       </div> 
     </div> <br>
     
@@ -52,7 +52,7 @@
         <button id="six" name="six" (click)="numerar(6)">6</button>
       </div>
       <div class="col-3 text-center">
-        <button id="add" name="add">+</button>
+        <button id="add" name="add" (click)="operar('s')">+</button>
       </div> 
     </div> <br>
     
@@ -67,7 +67,7 @@
         <button id="nine" name="nine" (click)="numerar(9)">9</button>
       </div>
       <div class="col-3 text-center">
-        <button id="minus" name="minus">-</button>
+        <button id="minus" name="minus" (click)="operar('r')">-</button>
       </div> 
     </div> <br>
     
@@ -82,7 +82,7 @@
         <button id="decimal" name="decimal" (click)="decimar()">.</button>
       </div>
       <div class="col-3 text-center" >
-        <button id="equals" name="equals" style="background-color: cornflowerblue;">=</button>
+        <button id="equals" name="equals" style="background-color: cornflowerblue;" (click)="igualar()">=</button>
       </div> 
     </div> <br>
     
