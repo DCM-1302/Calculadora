@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'angular_test';
   operacion='0'
+  puntol=0
   Num=0
   numerar(Num: number) {
     if (this.operacion === '0'){
@@ -17,8 +18,34 @@ export class AppComponent {
     }
     document.getElementById("display")!.innerHTML=this.operacion
   }
-  borrar(){
-    this.operacion='0'
+  borrar(Num: number){
+    if(this.Num===1){
+      this.operacion='0'
+    } else {
+      if(this.operacion.length > 1){
+      this.operacion = this.operacion.slice(0,-1)
+      } else{
+        this.operacion = "0"
+      }
+    }
+    document.getElementById("display")!.innerHTML=this.operacion
+  }
+  decimar(){
+    this.puntol= this.operacion.indexOf(".")
+    if(this.puntol===-1){
+      this.operacion= this.operacion + ".";
+    } else{
+      this.operacion= this.operacion;
+    }
+    document.getElementById("display")!.innerHTML=this.operacion
+  }
+  negar(){
+    this.puntol = this.operacion.indexOf("-")
+    if(this.puntol===-1){
+      this.operacion= "-" + this.operacion
+    } else {
+      this.operacion= this.operacion.replace('-','')
+    }
     document.getElementById("display")!.innerHTML=this.operacion
   }
 }

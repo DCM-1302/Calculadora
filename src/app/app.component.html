@@ -13,13 +13,13 @@
 > <br>
     <div class="row">
       <div class="col-3 text-center">
-        <button  style="color: red;" id="delete" name="delete" (click)="borrar()">C</button>
+        <button  style="color: red;" id="delete" name="delete" (click)="borrar(1)">C</button>
       </div>
       <div class="col-3 text-center">
-        <button id="rewind" name="rewind">Borrar</button>
+        <button id="rewind" name="rewind" (click)="borrar(2)">Borrar</button>
       </div>
       <div class="col-3 text-center">
-        <button id="paren" name="paren">()</button>
+        <button id="paren" name="paren">^</button>
       </div>
       <div class="col-3 text-center">
         <button id="divide" name="divide">/</button>
@@ -73,13 +73,13 @@
     
     <div class="row">
       <div class="col-3 text-center">
-        <button id="inverse" name="inverse">+/-</button>
+        <button id="inverse" name="inverse" (click)="negar()">+/-</button>
       </div>
       <div class="col-3 text-center">
         <button id="zero" name="zero" (click)="numerar(0)">0</button>
       </div>
       <div class="col-3 text-center">
-        <button id="decimal" name="decimal">.</button>
+        <button id="decimal" name="decimal" (click)="decimar()">.</button>
       </div>
       <div class="col-3 text-center" >
         <button id="equals" name="equals" style="background-color: cornflowerblue;">=</button>
