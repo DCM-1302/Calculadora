@@ -73,7 +73,7 @@ export class AppComponent {
     let b = parseFloat(this.operacion);
 
     if(this.ultimis=== 'e'){
-      this.resultado= a^b;
+      this.resultado= a**b;
     }
     else if (this.ultimis === 'd'){
       this.resultado = a/b
