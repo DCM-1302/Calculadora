@@ -23,15 +23,15 @@ export class AppComponent {
     }
     document.getElementById("display")!.innerHTML=this.operacion
   }
-  borrar(Num: number){
-    if(this.Num===1){
-      this.operacion='0'
-    } else {
-      if(this.operacion.length > 1){
+  eliminar(){
+    this.operacion='0'
+    document.getElementById("display")!.innerHTML=this.operacion
+  }
+  borrar(){
+    if(this.operacion.length > 1){
       this.operacion = this.operacion.slice(0,-1)
-      } else{
+    } else{
         this.operacion = "0"
-      }
     }
     document.getElementById("display")!.innerHTML=this.operacion
   }
